@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Оставить отзыв</title>
+</head>
+<body class="page_body">
+  <header class="page-header">
+    <a class="page-header_logo">
+      <img src="img/logotype-desktop.svg.svg" width="138px" height="71px" alt="Логотип Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav_toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav_wrapper">
+        <ul class="main-nav_list">
+          <li class="main-nav_list-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav_list-item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav_list-item">
+            <a href="#">Форма отзыва</a>
+          </li>
+          <li class="main-nav_list-item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="review">
+      <h1 class="review_title">Оставьте свой отзыв</h1>
+      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="review_form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Ваше общее впечатление:</legend>
+          <ul>
+            <li class="review_radio">
+              <input type="radio" name="radio-groupe" id="filter-positive" value="positive">
+              <label for="filter-positive">Скорее положительное</label>
+            </li>
+            <li class="review_radio">
+              <input type="radio" name="radio-groupe" id="filter-negative" value="negative">
+              <label for="filter-negative">Скорее отрицательное</label>
+            </li>
+            <li class="review_radio">
+              <input type="radio" name="radio-groupe" id="filter-neutral" value="neutral">
+              <label for="filter-neutral">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Представьтесь:</legend>
+          <ul>
+            <li class="review_text-box">
+              <label for="name">Имя*:</label>
+              <input type="text" name="name" id="name" placeholder="Петр" required>
+            </li>
+            <li class="review_text-box">
+              <label for="surname">Фамилия*:</label>
+              <input type="text" name="surname" id="surname" placeholder="Иванов" required>
+            </li>
+            <li class="review_text-box">
+              <label for="patronymic">Отчество:</label>
+              <input type="text" name="patronymic" id="patronymic" placeholder="Александрович" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Контактная информация:</legend>
+          <ul>
+            <li class="review_contact">
+              <label for="phone">Телефон*:</label>
+              <input type="number" name="phone" id="phone" placeholder="Введите телефон" required>
+            </li>
+            <li class="review_contact">
+              <label for="mail">Электронная почта*:</label>
+              <input type="email" name="mail" id="mail" placeholder="Введите e-mail" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Посещенные достопримечательности:</legend>
+          <ul>
+            <li class="review_checkbox">
+              <input type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+              <label for="devil-bridge">Мост Дьявола</label>
+            </li>
+            <li class="review_checkbox">
+              <input type="checkbox" name="mount-bell" id="mount-bell" checked>
+              <label for="mount-bell">Гора-Колокол</label>
+            </li>
+            <li class="review_checkbox">
+              <input type="checkbox" name="slide-park" id="slide-park" checked>
+              <label for="slide-park">Слайд-парк</label>
+            </li>
+            <li class="review_checkbox">
+              <input type="checkbox" name="red-rocks" id="red-rocks">
+              <label for="red-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Опишите свои эмоции:</legend>
+          <textarea name="review_text" id="review_text" cols="30" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <input type="submit" value="Отправить отзыв">
+        <span>* - обязательные поля</span>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <p>#visitSEDONA</p>
+    <div class="social-button">
+      <ul class="social-list">
+        <li class="social_item">
+          <a href="#">Twitter</a>
+        </li>
+        <li class="social_item">
+          <a href="#">Facebook</a>
+        </li>
+        <li class="social_item">
+          <a href="#">YouTube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p class="copyright_title">Разработано</p>
+      <a href="#" class="copyright_link">
+        <img src="img/htmlacademy.svg.svg" alt="">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
