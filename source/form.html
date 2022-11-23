@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Оставить отзыв</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page_body">
   <header class="page-header">
@@ -14,16 +15,16 @@
       <div class="main-nav_wrapper">
         <ul class="main-nav_list">
           <li class="main-nav_item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav_link"  href="index.html">Главная</a>
           </li>
           <li class="main-nav_item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="main-nav_link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav_item main-nav_item--current">
-            <a>Форма отзыва</a>
+            <a class="main-nav_link">Форма отзыва</a>
           </li>
           <li class="main-nav_item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav_link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -31,85 +32,85 @@
   </header>
   <main class="page-main">
     <section class="description">
-      <h1 class="description_title">Оставьте свой отзыв</h1>
+      <h1 class="description_title title">Оставьте свой отзыв</h1>
       <p class="description_text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
-    <section class="review">
+    <section class="page_review-form review-form">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="review_form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend>Ваше общее впечатление:</legend>
-          <ul>
-            <li class="review_radio">
-              <input type="radio" name="radio-groupe" id="filter-positive" value="positive">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="review-form_item">
+          <legend class="review-form_title">Ваше общее впечатление:</legend>
+          <ul class="form-list">
+            <li class="form-list_item radio">
+              <input class="radio_input" type="radio" name="radio-groupe" id="filter-positive" value="positive">
               <label for="filter-positive">Скорее положительное</label>
             </li>
-            <li class="review_radio">
-              <input type="radio" name="radio-groupe" id="filter-negative" value="negative">
+            <li class="form-list_item radio">
+              <input class="radio_input" type="radio" name="radio-groupe" id="filter-negative" value="negative">
               <label for="filter-negative">Скорее отрицательное</label>
             </li>
-            <li class="review_radio">
-              <input type="radio" name="radio-groupe" id="filter-neutral" value="neutral">
+            <li class="form-list_item radio">
+              <input class="radio_input" type="radio" name="radio-groupe" id="filter-neutral" value="neutral">
               <label for="filter-neutral">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Представьтесь:</legend>
-          <ul>
-            <li class="review_text-box">
-              <label for="name">Имя*:</label>
-              <input type="text" name="name" id="name" placeholder="Петр" required>
+        <fieldset class="review-form_item">
+          <legend class="review-form_title">Представьтесь:</legend>
+          <ul class="form-list">
+            <li class="form-list_item field">
+              <label class="field_label" for="name">Имя*:</label>
+              <input class="field_input" type="text" name="name" id="name" placeholder="Петр" required>
             </li>
-            <li class="review_text-box">
-              <label for="surname">Фамилия*:</label>
-              <input type="text" name="surname" id="surname" placeholder="Иванов" required>
+            <li class="form-list_item field">
+              <label class="field_label" for="surname">Фамилия*:</label>
+              <input class="field_input" type="text" name="surname" id="surname" placeholder="Иванов" required>
             </li>
-            <li class="review_text-box">
-              <label for="patronymic">Отчество:</label>
-              <input type="text" name="patronymic" id="patronymic" placeholder="Александрович" required>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Контактная информация:</legend>
-          <ul>
-            <li class="review_contact">
-              <label for="phone">Телефон*:</label>
-              <input type="number" name="phone" id="phone" placeholder="Введите телефон" required>
-            </li>
-            <li class="review_contact">
-              <label for="mail">Электронная почта*:</label>
-              <input type="email" name="mail" id="mail" placeholder="Введите e-mail" required>
+            <li class="form-list_item field">
+              <label class="field_label" for="patronymic">Отчество:</label>
+              <input class="field_input" type="text" name="patronymic" id="patronymic" placeholder="Александрович" required>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Посещенные достопримечательности:</legend>
-          <ul>
-            <li class="review_checkbox">
-              <input type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-              <label for="devil-bridge">Мост Дьявола</label>
+        <fieldset class="review-form_item">
+          <legend class="review-form_title">Контактная информация:</legend>
+          <ul class="form-list">
+            <li class="form-list_item field">
+              <label class="field_label" for="phone">Телефон*:</label>
+              <input class="field_input" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
             </li>
-            <li class="review_checkbox">
-              <input type="checkbox" name="mount-bell" id="mount-bell" checked>
-              <label for="mount-bell">Гора-Колокол</label>
-            </li>
-            <li class="review_checkbox">
-              <input type="checkbox" name="slide-park" id="slide-park" checked>
-              <label for="slide-park">Слайд-парк</label>
-            </li>
-            <li class="review_checkbox">
-              <input type="checkbox" name="red-rocks" id="red-rocks">
-              <label for="red-rocks">Красные скалы</label>
+            <li class="form-list_item field">
+              <label class="field_label" for="mail">Электронная почта*:</label>
+              <input class="field_input" type="email" name="mail" id="mail" placeholder="Введите e-mail" required>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Опишите свои эмоции:</legend>
+        <fieldset class="review-form_item">
+          <legend class="review-form_title">Посещенные достопримечательности:</legend>
+          <ul class="form-list" form->
+            <li class="form-list_item checkbox">
+              <input class="checkbox_input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+              <label class="checkbox_label" for="devil-bridge">Мост Дьявола</label>
+            </li>
+            <li class="form-list_item checkbox">
+              <input class="checkbox_input" type="checkbox" name="mount-bell" id="mount-bell" checked>
+              <label class="checkbox_label" for="mount-bell">Гора-Колокол</label>
+            </li>
+            <li class="form-list_item checkbox">
+              <input class="checkbox_input" type="checkbox" name="slide-park" id="slide-park" checked>
+              <label class="checkbox_label" for="slide-park">Слайд-парк</label>
+            </li>
+            <li class="form-list_item checkbox">
+              <input class="checkbox_input" type="checkbox" name="red-rocks" id="red-rocks">
+              <label class="checkbox_label" for="red-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="review-form_item">
+          <legend class="review-form_title">Опишите свои эмоции:</legend>
           <textarea name="review_text" id="review_text" cols="30" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <input type="submit" value="Отправить отзыв">
+        <input class="button" type="submit" value="Отправить отзыв">
         <span>* - обязательные поля</span>
       </form>
     </section>
