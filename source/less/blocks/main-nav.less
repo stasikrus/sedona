@@ -5,6 +5,15 @@
 .main-nav_list {
   list-style: none;
   margin: 0;
+  padding: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 723px;
+  }
+
 }
 
 .main-nav_link {
@@ -12,4 +21,23 @@
   text-decoration: none;
   font-weight: bold;
   line-height: 40px;
+}
+
+.main-nav_wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 723px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1069px;
+  }
+}
+
+.main-nav_toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
