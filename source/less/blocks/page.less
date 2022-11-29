@@ -7,14 +7,31 @@
 }
 
 .page_body {
+  margin: 0;
+  min-width: 320px;
+  color: @black;
+}
+
+.page_wrapper {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  min-width: 320px;
+  width: 320px;
+  margin: 0 auto;
   min-height: 100%;
-  margin: 0;
-  color: @black;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .page_review-form {
   margin-top: 22px;
+}
+
+.page_img {
+  max-width: 100%;
 }

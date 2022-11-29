@@ -1,5 +1,6 @@
 .main-nav {
-  background-color: @blue;
+  background-color: @white;
+
 }
 
 .main-nav_list {
@@ -11,7 +12,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 723px;
+    width: 100%;
   }
 
 }
@@ -21,12 +22,16 @@
   text-decoration: none;
   font-weight: bold;
   line-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+  }
 }
 
 .main-nav_wrapper {
+  height: 56px;
+
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
     width: 723px;
     margin: 0 auto;
   }
