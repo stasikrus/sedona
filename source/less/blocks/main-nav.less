@@ -21,11 +21,18 @@
   color: @white;
   text-decoration: none;
   font-weight: bold;
-  line-height: 40px;
 
   @media (min-width: @tablet-width) {
     color: @black;
+    font-size: 14px;
   }
+}
+
+.main-nav_item:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    margin-left: 168px;
+  }
+
 }
 
 .main-nav_wrapper {
@@ -34,6 +41,8 @@
   @media (min-width: @tablet-width) {
     width: 723px;
     margin: 0 auto;
+    height: 26px;
+    padding: 16px 0 14px 0;
   }
 
   @media (min-width: @desktop-width) {
