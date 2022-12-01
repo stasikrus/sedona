@@ -1,15 +1,48 @@
 .page-footer {
   margin-bottom: 26px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .social_list {
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .social_link {
-  background-color: @blue;
   text-decoration: none;
 }
 
+.page-footer_item {
+  @media (min-width: @tablet-width) {
+    padding-left: 45px;
+    padding-top: 10px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 104px;
+    padding-top: 10px;
+  }
+}
 
+.social_item {
+  background-color: @blue;
+  width: 47px;
+  height: 48px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 6px;
+  }
+}
+
+.page-footer_social {
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
+  }
+}
