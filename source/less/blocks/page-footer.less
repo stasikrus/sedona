@@ -1,18 +1,23 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 26px;
   text-align: center;
 
+
   @media (min-width: @tablet-width) {
-    display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 }
 
 .social_list {
   list-style: none;
+  padding: 0;
+  display: flex;
 
-  @media (min-width: @tablet-width) {
-    display: flex;
+  @media (max-width: @mobile-width-only) {
+    justify-content: center;
   }
 }
 
@@ -35,10 +40,7 @@
   background-color: @blue;
   width: 47px;
   height: 48px;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 6px;
-  }
+  margin-right: 6px;
 }
 
 .page-footer_social {
