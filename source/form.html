@@ -43,7 +43,7 @@
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="review-form_form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="review-form_item review-form_item--name">
-            <legend class="review-form_title">Представьтесь:</legend>
+            <legend class="review-form_title review-form_title--name">Представьтесь:</legend>
             <ul class="form-list">
               <li class="form-list_item field">
                 <label class="field_label" for="name">Имя*:</label>
@@ -61,7 +61,7 @@
           </fieldset>
           <fieldset class="review-form_item review-form_item--contacts">
             <legend class="review-form_title">Контактная информация:</legend>
-            <ul class="form-list">
+            <ul class="form-list form-list_contacts">
               <li class="form-list_item field">
                 <label class="field_label" for="phone">Контактный телефон*:</label>
                 <input class="field_input field_input-contacts" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
@@ -73,7 +73,7 @@
             </ul>
           </fieldset>
           <fieldset class="review-form_item review-form_item--impression">
-            <legend class="review-form_title">Ваше общее впечатление:</legend>
+            <legend class="review-form_title review-form_title--impression">Ваше общее впечатление:</legend>
             <ul class="form-list">
               <li class="form-list_item radio">
                 <input class="radio_input" type="radio" name="radio-groupe" id="filter-positive" value="positive">
@@ -90,8 +90,8 @@
             </ul>
           </fieldset>
           <fieldset class="review-form_item review-form_item--checkbox">
-            <legend class="review-form_title">Посещенные достопримечательности:</legend>
-            <ul class="form-list" form->
+            <legend class="review-form_title review-form_title--checkbox">Посещенные достопримечательности:</legend>
+            <ul class="form-list form-list_checkbox" form->
               <li class="form-list_item checkbox">
                 <input class="checkbox_input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
                 <label class="checkbox_label" for="devil-bridge">Мост Дьявола</label>

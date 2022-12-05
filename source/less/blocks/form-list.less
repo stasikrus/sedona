@@ -4,6 +4,20 @@
   padding: 0;
 }
 
-.form-list_item {
-  
+.form-list_checkbox {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-list_contacts {
+    display: flex;
+    justify-content: space-between;
+  }
 }

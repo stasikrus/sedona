@@ -46,8 +46,43 @@
   }
   .review-form_button {
     order: 6;
+    width: 324px;
+    padding: 14px 32px 14px 32px;
   }
   .form_legend {
     order: 7;
+    margin-left: auto;
   }
  }
+
+ .review-form_title--impression {
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
+ }
+
+ .review-form_title--name {
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin-left: 44px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 157px;
+  }
+ }
+
+ .review-form_title--checkbox {
+  @media (min-width: @tablet-width) {
+    width: 308px;
+    margin-bottom: 47px;
+  }
+ }
+
+ @media (min-width: @desktop-width) {
+  .review-form_item--contacts {
+    width: 100%;
+  }
+}
