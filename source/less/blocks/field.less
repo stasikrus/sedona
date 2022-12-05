@@ -3,11 +3,32 @@
 }
 
 .field_input {
+  width: 146px;
+  height: 26px;
   background-color: @grey-input;
   border: none;
   padding: 18px 22px  14px 22px;
   margin-bottom: 20px;
+  margin-left: 5px;
 }
+
+.field_input--first {
+  width: 186px;
+}
+
+.field_input-contacts {
+  width: 236px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    width: 604px;
+  }
+}
+
+.field_input--patronymic {
+  margin-left: 7px;
+}
+
 
 .field_input::placeholder {
   font-size: 18px;

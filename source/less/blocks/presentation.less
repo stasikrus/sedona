@@ -1,3 +1,29 @@
 .presentation {
   margin-top: 42px;
+
+  @media (min-width: @desktop-width) {
+   margin-top: 63px;
+  }
+}
+
+
+.presentation_video {
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+.presentation {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 85px;
+  }
 }

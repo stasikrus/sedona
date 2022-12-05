@@ -2,13 +2,62 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .gallery_photo {
   width: 100%;
   height: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+   }
+
+   @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+
+}
+
+.gallery_photo--first {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 400px;
+   }
 }
 
 .gallery_block {
   margin: 20px;
+
+  @media (min-width: @tablet-width) {
+   margin: 0;
+  }
+}
+
+.gallery {
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
+}
+
+.gallery_item--first {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.gallery_caption-wrap {
+  padding: 16px 20px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @grey;
+  }
 }

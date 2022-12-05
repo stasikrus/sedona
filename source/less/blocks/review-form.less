@@ -1,7 +1,53 @@
 .review-form_title {
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 19px;
 }
 
 .review-form_item {
   border: none;
+  padding: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
+
+.review-form_form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review-form_item--name {
+    order: 2;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .review-form_item--contacts {
+    order: 3;
+  }
+  .review-form_item--impression {
+    order: 1;
+    flex-basis: 50%;
+  }
+  .review-form_item--checkbox {
+    order: 4;
+    flex-basis: 100%;
+  }
+  .review-form_item--review {
+    order: 5;
+    flex-basis: 100%;
+  }
+  .review-form_button {
+    order: 6;
+  }
+  .form_legend {
+    order: 7;
+  }
+ }
