@@ -2,6 +2,10 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form_item {
@@ -19,6 +23,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 60px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding: 0 120px;
   }
 }
 
@@ -61,6 +69,7 @@
   }
   @media (min-width: @desktop-width) {
     text-align: center;
+    margin-bottom: 55px;
   }
  }
 
@@ -70,7 +79,8 @@
     margin-left: 44px;
   }
   @media (min-width: @desktop-width) {
-    margin-left: 157px;
+    margin-left: 79px;
+    margin-bottom: 54px;
   }
  }
 
@@ -84,5 +94,145 @@
  @media (min-width: @desktop-width) {
   .review-form_item--contacts {
     width: 100%;
+  }
+}
+
+.review-form_item--name {
+  position: relative;
+}
+
+.review-form_item--name::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: -63px;
+  left: -20px;
+  background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    width: 1px;
+    height: 292px;
+  }
+}
+
+.review-form_item--contacts {
+  position: relative;
+}
+
+.review-form_item--contacts::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: -73px;
+  left: -20px;
+  background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    top: -33px;
+    width: 123px;
+    left: 0;
+  }
+}
+
+.review-form_item--contacts::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: -33px;
+    width: 123px;
+    right: 0;
+    height: 1px;
+    background-color: @grey;
+  }
+}
+
+.review-form_item--impression {
+  position: relative;
+}
+
+.review-form_item--impression::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: -73px;
+  left: -20px;
+  background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.review-form_item--checkbox {
+  position: relative;
+}
+
+.review-form_item--checkbox::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: -99px;
+  left: -20px;
+  background-color: @grey;
+
+
+  @media (min-width: @tablet-width) {
+    top: -76px;
+    width: 123px;
+    left: 0;
+  }
+}
+
+.review-form_item--checkbox::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: -76px;
+    width: 123px;
+    right: 0;
+    height: 1px;
+    background-color: @grey;
+  }
+}
+
+.review-form_item--review {
+  position: relative;
+}
+
+.review-form_item--review::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: -72px;
+  left: -20px;
+  background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    top: -33px;
+    width: 123px;
+    left: 0;
+  }
+}
+
+.review-form_item--review::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: -33px;
+    width: 123px;
+    right: 0;
+    height: 1px;
+    background-color: @grey;
+  }
+}
+
+.review-form {
+  @media (min-width: @desktop-width) {
+    margin-top: 57px;
   }
 }
