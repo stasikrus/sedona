@@ -36,6 +36,35 @@
   }
 }
 
+.main-nav_link:hover {
+  @media (min-width: @tablet-width) {
+    color: @blue;
+    transition: 0.3s;
+  }
+}
+
+.main-nav_link:active {
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    opacity: 0.3;
+    transition: 0.2s;
+  }
+}
+
+.main-nav_link--current {
+  @media (min-width: @tablet-width) {
+    color: #766357;
+  }
+}
+
+.main-nav_link--current:hover {
+  @media (min-width: @tablet-width) {
+    color: #604E43;
+  }
+}
+
+
+
 .main-nav_item {
   border-top: 1px solid rgba(255,255,255,.2);
   border-bottom: 1px solid rgba(0,0,0,.2);
