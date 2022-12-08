@@ -1,9 +1,5 @@
 .page-header {
   background-color: @white;
-  background: url("../../img/back-mobile.jpg.png") center no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  padding-bottom: 389px;
   display: flex;
   flex-direction: column;
 
@@ -18,4 +14,41 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0%);
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+  }
 }
+
+.page-header_main-image {
+  text-align: center;
+  padding-top: 90px;
+  background-color: @white;
+  background: url("../../img/intro-triangle.svg.svg") center no-repeat, url("../../img/back-mobile.jpg.png") center no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding-bottom: 116px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    background: url("../../img/intro-triangle.svg\ \(1\).svg") bottom no-repeat, url("../../img/back-desktop.jpg.png") center no-repeat;
+    width: 100%;
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+  @media (min-width: @desktop-width) {
+    background: url("../../img/intro-triangle.svg\ desktop.svg") bottom no-repeat, url("../../img/back-desktop.jpg.png") center no-repeat;
+    background-size: 1200px;
+  }
+}
+
+.main-image {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
