@@ -67,7 +67,7 @@
           <fieldset class="review-form_item review-form_item--contacts">
             <legend class="review-form_title">Контактная информация:</legend>
             <ul class="form-list form-list_contacts">
-              <li class="form-list_item field">
+              <li class="form-list_item field field_phone">
                 <label class="field_label" for="phone">Контактный телефон*:</label>
                 <input class="field_input field_input-contacts" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
               </li>
@@ -81,15 +81,15 @@
             <legend class="review-form_title review-form_title--impression">Ваше общее впечатление:</legend>
             <ul class="form-list">
               <li class="form-list_item radio">
-                <input class="radio_input" type="radio" name="radio-groupe" id="filter-positive" value="positive">
+                <input class="radio_input visually-hidden" type="radio" name="radio-groupe" id="filter-positive" value="positive" checked>
                 <label class="radio_label" for="filter-positive">Скорее положительное</label>
               </li>
               <li class="form-list_item radio">
-                <input class="radio_input" type="radio" name="radio-groupe" id="filter-negative" value="negative">
+                <input class="radio_input visually-hidden" type="radio" name="radio-groupe" id="filter-negative" value="negative">
                 <label class="radio_label" for="filter-negative">Скорее отрицательное</label>
               </li>
               <li class="form-list_item radio">
-                <input class="radio_input" type="radio" name="radio-groupe" id="filter-neutral" value="neutral">
+                <input class="radio_input visually-hidden" type="radio" name="radio-groupe" id="filter-neutral" value="neutral">
                 <label class="radio_label" for="filter-neutral">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -98,19 +98,19 @@
             <legend class="review-form_title review-form_title--checkbox">Посещенные достопримечательности:</legend>
             <ul class="form-list form-list_checkbox" form->
               <li class="form-list_item checkbox">
-                <input class="checkbox_input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <input class="checkbox_input visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
                 <label class="checkbox_label" for="devil-bridge">Мост Дьявола</label>
               </li>
               <li class="form-list_item checkbox">
-                <input class="checkbox_input" type="checkbox" name="mount-bell" id="mount-bell" checked>
+                <input class="checkbox_input visually-hidden" type="checkbox" name="mount-bell" id="mount-bell" checked>
                 <label class="checkbox_label" for="mount-bell">Гора-Колокол</label>
               </li>
               <li class="form-list_item checkbox">
-                <input class="checkbox_input" type="checkbox" name="slide-park" id="slide-park" checked>
+                <input class="checkbox_input visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
                 <label class="checkbox_label" for="slide-park">Слайд-парк</label>
               </li>
               <li class="form-list_item checkbox">
-                <input class="checkbox_input" type="checkbox" name="red-rocks" id="red-rocks">
+                <input class="checkbox_input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks">
                 <label class="checkbox_label" for="red-rocks">Красные скалы</label>
               </li>
             </ul>

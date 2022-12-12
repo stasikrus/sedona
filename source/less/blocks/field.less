@@ -1,3 +1,7 @@
+.field {
+  position: relative;
+}
+
 .field_label {
   font-size: 14px;
 }
@@ -50,4 +54,22 @@
   @media (min-width: @desktop-width) {
     margin-left: 230px;
   }
+}
+
+.field_mail::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  right: 0;
+  background: @dark-grey url(../../img/phone.svg.svg) center no-repeat;
+}
+
+.field_phone::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  right: 0;
+  background: @dark-grey url(../../img/mail.svg.svg) center no-repeat;
 }

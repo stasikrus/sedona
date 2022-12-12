@@ -1,11 +1,35 @@
 .radio_label {
   text-transform: none;
   font-weight: bold;
+  padding-left: 40px;
+  position: relative;
+}
 
+.radio_label::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: -13px;
+  left: -26px;
+  background-color: @grey;
+  border-radius: 50%;
+}
+
+.radio_input:checked + .radio_label::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #333333;
+  top: 5px;
+  left: -6px;
+  border-radius: 50%;
 }
 
 .radio {
-  padding: 15px 0 15px 55px;
+  padding: 15px 0 15px 35px;
+  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 22px;

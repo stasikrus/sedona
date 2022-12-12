@@ -1,5 +1,6 @@
 .checkbox {
-  padding: 15px 0 15px 55px;
+  padding: 15px 0 15px 35px;
+  margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     width: 225px;
@@ -11,10 +12,33 @@
 }
 
 .checkbox_label {
+  position: relative;
   text-transform: none;
   font-weight: bold;
+  padding-left: 50px;
 
   @media (min-width: @tablet-width) {
 
   }
+}
+
+.checkbox_label::before {
+  content: "";
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  background-color: @grey;
+  top: -15px;
+  left: -20px;
+  border-radius: 5%;
+}
+
+.checkbox_input:checked + .checkbox_label::after {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 16px;
+  background-image: url("../../img/tick.svg.svg");
+  top: 5px;
+  left: -1px;
 }
